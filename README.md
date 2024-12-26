@@ -100,6 +100,45 @@ The system returns results in JSON format:
 }
 ```
 
+## Important Notes
+
+1. Performance Dependencies:
+   - The agent's performance is heavily dependent on prompt engineering and the language models used
+   - Current implementation uses basic prompts and lower-version models which may not be optimal
+   - Results can be improved significantly with better prompt engineering and more advanced language models
+
+2. Document Processing Limitations:
+   - The document searcher's performance varies based on document complexity
+   - Current implementation works best with simple PDF documents where paragraph segmentation is straightforward
+   - For complex documents, proper pre-processing and segmentation should be implemented
+   - Document indexing should be optimized for better retrieval performance
+
+## Scope for Improvement
+
+1. Document Processing:
+   - Implement advanced document segmentation techniques
+   - Add support for more document formats
+   - Develop better indexing mechanisms for complex documents
+   - Optimize paragraph extraction and processing
+
+2. Agent Enhancement:
+   - Optimize prompt engineering for better question understanding and answer generation
+   - Upgrade to more advanced language models
+   - Implement better context management for follow-up questions
+   - Add support for multi-document querying
+
+3. Performance Optimization:
+   - Implement caching mechanisms for frequently accessed documents
+   - Optimize document search algorithms
+   - Add parallel processing for batch questions
+   - Implement better error handling and recovery mechanisms
+
+4. User Interface:
+   - Add a web interface for easier interaction
+   - Implement real-time processing feedback
+   - Add visualization for document segmentation
+   - Develop better result formatting options
+
 ## Contributing
 
 1. Fork the repository
