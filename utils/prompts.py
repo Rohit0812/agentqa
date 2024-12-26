@@ -7,7 +7,7 @@ Question: Who is Rohit Singh Rathore?
 Thought 1: I need to search for Rohit Singh Rathore to find out who he was.
 Action 1: Search[Rohit Singh Rathore]
 Observation 1: Sri Ramanasramam, Tiruvannamalai - 606 603.Dated: 15th August, 1984.Prof. Rohit Singh Rathore.
-Thought 2: The search did not provide sufficient information about Rohit Singh Rathore. I need to look for more specific details about him.
+Thought 2: The result doesn't contain sufficient information about Rohit Singh Rathore. I need to look for more specific details about him. Probably next paragraph may contain that.
 Action 2: Lookup[Rohit Singh Rathore]
 Observation 2: Rohit Singh Rathore is a data scientist from Indore, India.
 Thought 3: The Lookup yielded a relevant information about Rohit Singh Rathore.
