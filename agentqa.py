@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class ReActDocumentQA:
-    def __init__(self, document: str, index_name: str, model="gpt-4o-mini", max_iterations=5):
+    def __init__(self, document: str, index_name: str, max_iterations=5):
         """
         Initialize the ReAct agent with a document and OpenAI configuration.
         
@@ -26,9 +26,9 @@ class ReActDocumentQA:
         self.__entity_searcher.prepare_index(document)
 
         self.__kw_lookup = {}
-        self.__model = model
+        self.__model = os.getenv("OPENAI_MODEL")
         self.__max_iterations = max_iterations
-        self.__client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.__client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
     def __search(self, keywords: str) -> str:
         """

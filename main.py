@@ -28,14 +28,16 @@ if __name__ == "__main__":
     #document_name = 'lily_story.txt'
     #document_type = 'TXT'
     #questions = [
-    #    "What was the legend about the enchanted pond?",
+    #    "What Lily did one morning?",
     #    "What did Lily bring to the pond and why?"
     #]
     
-    document_name = 'summit.pdf'
+    document_name = 'story.pdf'
     document_type = 'PDF'
     questions = [
-        "Who is Ahluvalia?",
+        "Where did Clara live?",
+        "What Clara and Leo did together?",
+        "Tell me about adventure of Clara and Leo."
     ]
     result = run_app(document_name, document_type, questions)
 

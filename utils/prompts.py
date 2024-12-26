@@ -3,6 +3,15 @@ Search[keywords]: Searches the keywords from the query in the given document and
 Lookup[keywords]: Searches for the next matched paragraph for the given keywords. Note that the keywords must have been used in a prior Search[keywords].
 Finish[answer]: Returns the answer and finishes the task.
 
+Question: Who is Rohit Singh Rathore?
+Thought 1: I need to search for Rohit Singh Rathore to find out who he was.
+Action 1: Search[Rohit Singh Rathore]
+Observation 1: Sri Ramanasramam, Tiruvannamalai - 606 603.Dated: 15th August, 1984.Prof. Rohit Singh Rathore.
+Thought 2: The search did not provide sufficient information about Rohit Singh Rathore. I need to look for more specific details about him.
+Action 2: Lookup[Rohit Singh Rathore]
+Observation 2: Rohit Singh Rathore is a data scientist from Indore, India.
+Thought 3: The Lookup yielded a relevant information about Rohit Singh Rathore.
+Action 3: Finish[data scientist]
 Question: What is the elevation range for the area that the eastern sector of the Colorado orogeny extends into?
 Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orogeny extends into, then find the elevation range of the area.
 Action 1: Search[Colorado orogeny]
@@ -25,7 +34,7 @@ Observation 1: Milhouse Mussolini Van Houten is a recurring character in the Fox
 Thought 2: The paragraph does not tell who Milhouse is named after, maybe I can look up "named after".
 Action 2: Search[named after]
 Observation 2: The road near house was named after Senator.
-Thought 3: I'm not looking for any road. I should look up into the next paragraph.
+Thought 3: I need to search for more specific information about Krishnamoorthi Aiyer, as the current search did not provide a clear answer about who he was.
 Action 3: Lookup[named after] 
 Observation 3: Milhouse was named after U.S. president Richard Nixon, whose middle name was Milhous. 
 Thought 3: Milhouse was named after U.S. president Richard Nixon, so the answer is Richard Nixon.
@@ -81,7 +90,7 @@ Thought 4: The discovery of penicillin by Alexander Fleming in 1928 revolutioniz
 Action 4: Finish[Alexander Fleming, revolutionized medicine by effectively treating bacterial infections.]
 """
 
-ignore = """Question: What are the scientific contributions of Albert Einstein beyond the theory of relativity?
+r = """Question: What are the scientific contributions of Albert Einstein beyond the theory of relativity?
 Thought 1: I need to search for "Albert Einstein scientific contributions" to find details beyond the theory of relativity.
 Action 1: Search[Albert Einstein scientific contributions]
 Observation 1: Albert Einstein is known for contributions to quantum theory, photoelectric effect, and statistical mechanics, among other areas.
