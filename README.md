@@ -65,18 +65,6 @@ print(result)
 - PDF (.pdf)
 - Text files (.txt)
 
-## Project Structure
-
-```
-document-qa-agent/
-├── utils/
-│   ├── document.py      # Document handling utilities
-│   └── ...
-├── agentqa.py          # ReAct agent implementation
-├── requirements.txt    # Project dependencies
-└── README.md          # This file
-```
-
 ## Example
 
 ```python
@@ -120,12 +108,8 @@ The system returns results in JSON format:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
-- ReAct paper and implementation
+- ReAct paper and implementation (https://arxiv.org/pdf/2210.03629)
 - Contributors and maintainers
 - Document processing libraries used in the project
