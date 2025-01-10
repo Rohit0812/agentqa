@@ -153,5 +153,4 @@ The system returns results in JSON format:
 ## Acknowledgments
 
 - ReAct paper and implementation (https://arxiv.org/pdf/2210.03629)
-- Contributors and maintainers
 - Document processing libraries used in the project
