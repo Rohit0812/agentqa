@@ -3,12 +3,8 @@
 A Python-based question-answering system that uses ReAct (Reasoning and Acting) to provide accurate answers from documents. The system supports multiple document formats and employs an agent-based approach for intelligent information retrieval and response generation.
 
 ## Features
-
-- Document processing support for multiple formats (PDF, TXT)
 - ReAct-based agent for intelligent question answering
-- JSON-formatted responses
-- Easy-to-use interface for batch question processing
-- Flexible document handling through a dedicated Document class
+- CoT prompting
 
 ## Installation
 
@@ -107,13 +103,11 @@ The system returns results in JSON format:
 
 1. Performance Dependencies:
    - The agent's performance is heavily dependent on prompt engineering and the language models used
-   - Current implementation uses basic prompts and lower-version models which may not be optimal
    - Results can be improved significantly with better prompt engineering and more advanced language models
 
 2. Document Processing Limitations:
    - The document searcher's performance varies based on document complexity
    - Current implementation works best with simple PDF documents where paragraph segmentation is straightforward
-   - For complex documents, proper pre-processing and segmentation should be implemented
    - Document indexing should be optimized for better retrieval performance
 
 ## Scope for Improvement
@@ -142,15 +136,3 @@ The system returns results in JSON format:
    - Add visualization for document segmentation
    - Develop better result formatting options
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## Acknowledgments
-
-- ReAct paper and implementation (https://arxiv.org/pdf/2210.03629)
-- Document processing libraries used in the project
