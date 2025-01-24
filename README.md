@@ -1,6 +1,6 @@
 # Document Question-Answering Agent with ReAct
 
-A Python-based question-answering system that uses ReAct (Reasoning and Acting) to provide accurate answers from documents. The system supports multiple document formats and employs an agent-based approach for intelligent information retrieval and response generation.
+A low-level Python-based question-answering system without using langchain, llama-index, etc. that uses ReAct (Reasoning and Acting) to provide accurate answers from documents. The system supports multiple document formats and employs an agent-based approach for intelligent information retrieval and response generation.
 
 ## Features
 - ReAct-based agent for intelligent question answering
